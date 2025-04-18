@@ -1,0 +1,106 @@
+/* Background and general layout */
+body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Segoe UI', sans-serif;
+ background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+.heading {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 700;
+ letter-spacing: 2px;
+ text-align: center;
+ margin: 30px 0 20px;
+ font-size: 30px;
+ color: #000000;
+ /* background-color: #1f2937;
+ border-radius: 0 0 12px 12px;
+ padding: 20px 40px; */
+}
+
+/* Form container */
+.form-container {
+ background: #fff;
+ padding: 30px 40px;
+ border-radius: 15px;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+ width: 90%;
+ max-width: 400px;
+ text-align: center;
+}
+
+/* Heading */
+.form-container h2 {
+ margin-bottom: 20px;
+ color: #222;
+}
+
+/* Form inputs */
+label {
+ display: block;
+ margin-top: 15px;
+ margin-bottom: 5px;
+ text-align: left;
+ font-weight: 600;
+ color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+ width: 100%;
+ padding: 12px;
+ border: 2px solid #ddd;
+ border-radius: 8px;
+ box-sizing: border-box;
+ font-size: 16px;
+ background: #f9f9f9;
+}
+
+input:focus {
+ outline: none;
+ border-color: #ffcc00;
+ /* box-shadow: 0 0 5px #ffcc00aa; */
+}
+
+/* Button with yellow gradient */
+button[type="submit"] {
+ width: 100%;
+ padding: 12px;
+ margin-top: 25px;
+ background: linear-gradient(90deg, #f9d423, #ff4e00);
+ color: white;
+ border: none;
+ border-radius: 8px;
+ font-size: 16px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 5px 15px rgba(255, 206, 84, 0.6);
+}
+
+/* Link to login */
+p {
+ margin-top: 20px;
+ font-size: 14px;
+ color: #444;
+}
+
+p a {
+ color: #f9bc23;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+p a:hover {
+ text-decoration: underline;
+}

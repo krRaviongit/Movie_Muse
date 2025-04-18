@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Review</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Submit Your Review</h2>
+    <form id="reviewForm">
+      <label for="movie">Movie Title:</label>
+      <input type="text" id="movie" name="movie" required>
+
+      <label for="rating">Rating:</label>
+<div class="emoji-rating">
+  <label>
+    <input type="radio" name="rating" value="1" required>
+    <span>😡<div class="emoji-label">1</div></span>
+  </label>
+  <label>
+    <input type="radio" name="rating" value="2">
+    <span>😐<div class="emoji-label">2</div></span>
+  </label>
+  <label>
+    <input type="radio" name="rating" value="3">
+    <span>🙂<div class="emoji-label">3</div></span>
+  </label>
+  <label>
+    <input type="radio" name="rating" value="4">
+    <span>😄<div class="emoji-label">4</div></span>
+  </label>
+  <label>
+    <input type="radio" name="rating" value="5">
+    <span>😍<div class="emoji-label">5</div></span>
+  </label>
+</div>
+
+
+      <label for="comment">Your Review:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>   
+    <p id="message"></p>
+  </div>
+
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch('submit_review.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.text())
+      .then(data => {
+        const msg = document.getElementById('message');
+        msg.innerHTML = data;
+        this.reset();
+
+        // Automatically hide the message after 3 seconds
+        setTimeout(() => {
+          msg.innerHTML = "";
+        }, 3000);
+      });
+    });
+  </script>
+</body>
+</html>
