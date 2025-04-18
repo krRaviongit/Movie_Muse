@@ -9,7 +9,7 @@ Movie Muse is a simple and user-friendly movie review system built using **HTML*
 
 Here’s a glimpse of the **Movie Muse** homepage:
 
-![Movie Muse UI](https://github.com/user-attachments/assets/f182f3b0-89c1-46c2-a430-e1041b182f6f)
+![Movie Muse UI 2](https://github.com/user-attachments/assets/1998b892-7745-4677-af5f-b64d759f0cd7)
 
 ---
 
