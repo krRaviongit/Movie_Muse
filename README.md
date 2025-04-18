@@ -12,6 +12,7 @@ Here’s a glimpse of the **Movie Muse** homepage:
 ![Movie Muse UI 2](https://github.com/user-attachments/assets/1998b892-7745-4677-af5f-b64d759f0cd7)
 ![Movie Muse UI 3](https://github.com/user-attachments/assets/75c8d949-5a58-42be-b50c-0aba30b6cded)
 ![Movie Muse UI 4](https://github.com/user-attachments/assets/899cf847-2f58-4fe3-bbf0-76d4ed1671b9)
+
 ---
 
 ## 📌 Features
